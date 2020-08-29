@@ -35,7 +35,7 @@ INSERT INTO states VALUES (17, 'Tocantins', 'TO');
 CREATE TABLE cities(
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(45) NOT NULL,
-    fk_state INT NOT_NULL,
+    fk_state INT NOT NULL,
     CONSTRAINT FOREIGN KEY (fk_state) 
     REFERENCES states(id))
     CHARSET=utf8 ;
